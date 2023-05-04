@@ -1,6 +1,9 @@
 name: PR metadata annotation
 
-permissions: read-all|write-all
+permissions:
+  contents: write
+  pull-requests: write 
+  
 on: 
   pull_request:
     types: [opened, reopened, synchronize]
